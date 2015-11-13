@@ -16,7 +16,6 @@ public class Employee extends ElementsCompany {
 
 	public void display(String ident) {
 		System.out.println(ident + this);
-
 	}
 
 }

@@ -28,6 +28,7 @@ public class CompositeElementsCompany extends ElementsCompany {
 		for(ElementsCompanyIF element : elements) {
 			element.display(ident);
 		}
+
 	}
 
 }

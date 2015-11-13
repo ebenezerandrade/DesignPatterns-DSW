@@ -12,4 +12,9 @@ public class FabricaFiat implements FabricaDeCarro {
 		return new Palio();
 	}
 
+	@Override
+	public CarroSUV criarCarroSUV() {
+		return new Freemont();
+	}
+
 }

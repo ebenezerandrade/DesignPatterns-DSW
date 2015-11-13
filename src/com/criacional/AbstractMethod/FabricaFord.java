@@ -12,4 +12,9 @@ public class FabricaFord implements FabricaDeCarro {
 		return new Fiesta();
 	}
 
+	@Override
+	public CarroSUV criarCarroSUV() {
+		return new Edge();
+	}
+
 }

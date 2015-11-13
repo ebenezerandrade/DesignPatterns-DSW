@@ -1,6 +1,9 @@
 package com.estrutural.facade;
 
-public class Process {
+public abstract class Process {
 	
+	protected String name;
 	
+	public abstract String getName();
+
 }

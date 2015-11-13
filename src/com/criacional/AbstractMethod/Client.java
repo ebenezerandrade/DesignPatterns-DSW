@@ -4,8 +4,16 @@ public class Client {
 	
 	public static void main(String[] args){
 		
+		FabricaDeCarro fabricaFiat = new FabricaFiat();
+		CarroSedan carroSedanFiat = fabricaFiat.criarCarroSedan();
+		carroSedanFiat.exibirInfoSedan();
+		
+		FabricaDeCarro fabricaFord = new FabricaFord();
+		CarroPopular carroSedanFord = fabricaFord.criarCarroPopular();
+		carroSedanFord.exibirInfoPopular();
+		
 		FabricaDeCarro fabrica = new FabricaFiat();
-		CarroSedan carroTest = fabrica.criarCarroSedan();
-		carroTest.exibirInfoSedan();
+		CarroSUV carroSUVFiat = fabrica.criarCarroSUV();
+		carroSUVFiat.exibirInfoSUV();
 	}
 }

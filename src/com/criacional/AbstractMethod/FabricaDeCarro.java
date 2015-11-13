@@ -4,4 +4,6 @@ public interface FabricaDeCarro {
 	
 	public CarroSedan criarCarroSedan();
 	public CarroPopular criarCarroPopular();	
+	public CarroSUV criarCarroSUV();
+	
 }
