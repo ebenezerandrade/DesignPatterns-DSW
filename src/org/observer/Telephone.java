@@ -1,6 +1,6 @@
 package org.observer;
 
-// SOURCE
+//concreteSubject
 public class Telephone implements TelecommunicationsEquipment{
 	
 	private TelephoneListener listener;
