@@ -1,12 +1,11 @@
 package org.observer;
 
 // SOURCE
-public class Telephone {
-
-	private TelephoneListener listener;
+public class Telephone implements TelecommunicationsEquipment{
 	
+	private TelephoneListener listener;
+
 	public void setTelephoneListener(TelephoneListener listener) {
-		
 		this.listener = listener;
 	}
 	
