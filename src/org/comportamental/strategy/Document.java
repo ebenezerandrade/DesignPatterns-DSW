@@ -1,4 +1,4 @@
-package org.strategy;
+package org.comportamental.strategy;
 
 public abstract class Document {
 
