@@ -5,15 +5,9 @@ public class TelephoneExchange {
 	public static void main(String args[]) {
 		
 		Telephone telephone = new Telephone();
-		Person fulano = new Person("Omarzin");
+		new Person(telephone);
 		
-		fulano.observeTelephoneState(telephone);
-		telephone.isTouched();
-		
-		Fax fax = new Fax();
-		Person outroFulano = new Person("Benézi");
-		
-		outroFulano.observeFaxState(fax);
-		fax.isTouched();
+		telephone.setState("Está tocando");
+				
 	}
 }

@@ -3,27 +3,17 @@ package org.comportamental.observer;
 // ConcreteObserver
 public class Person implements TelephoneListener {
 	
-	private String name;
 	private String observeState;
+	protected Telephone telephone;
 	
-	public Person(String name) {
-		this.name = name;
+	public Person(Telephone telephone) {
+		this.telephone = telephone;
+		this.telephone.attach(this);
 	}
 	
-	public void observeTelephoneState(Telephone telephone) {
-		
+	public void update() {
+		observeState = telephone.getState();
+		System.out.println(observeState);
 	}
-	
-	public void observeFaxState(Fax fax) {
-		
-	}
-	
-	public void update(TelecommunicationEquipment obj) {
-		
-	}
-	
-	//update
-	public void TelephoneItTouched() {
-		System.out.println("Eu, " + name + ", atendo!");
-	}
+
 }

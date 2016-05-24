@@ -4,5 +4,5 @@ public interface TelecommunicationEquipment {
 
 	public void attach(TelephoneListener listener);
 	public void detach(TelephoneListener listener);
-	public void isTouched();
+	public void notifyAllObservers();
 }

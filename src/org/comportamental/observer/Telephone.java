@@ -1,29 +1,35 @@
 package org.comportamental.observer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //concreteSubject
 public class Telephone implements TelecommunicationEquipment{
 	
-	private TelephoneListener listener;
+	private List<TelephoneListener> observers = new ArrayList<TelephoneListener>();
 	private String telephoneState;
 
-	public void attach(TelephoneListener listener) {
-		this.listener = listener;
+	public void attach(TelephoneListener observer) {
+		observers.add(observer);
 	}
 	
-	public void detach(TelephoneListener listener) {
-		this.listener = listener;
-	}
-	
-	public void isTouched() {
-		listener.TelephoneItTouched();
+	public void detach(TelephoneListener observer) {
+		observers.add(observer);
 	}
 
-	public String getTelephoneState() {
+	public String getState() {
 		return telephoneState;
 	}
 
-	public void setTelephoneState(String telephoneState) {
+	public void setState(String telephoneState) {
 		this.telephoneState = telephoneState;
+		notifyAllObservers();
+	}
+
+	public void notifyAllObservers() {
+		for(TelephoneListener observer : observers) {
+			observer.update();
+		}
 	}
 	
 }
