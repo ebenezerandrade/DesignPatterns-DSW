@@ -1,10 +1,10 @@
 package org.comportamental.observer;
 
-//concreteSubject
-public class Telephone implements TelecommunicationEquipment{
+public class Fax implements TelecommunicationEquipment {
 	
 	private TelephoneListener listener;
-	private String telephoneState;
+	
+	private String faxState;	
 
 	public void attach(TelephoneListener listener) {
 		this.listener = listener;
@@ -18,12 +18,13 @@ public class Telephone implements TelecommunicationEquipment{
 		listener.TelephoneItTouched();
 	}
 
-	public String getTelephoneState() {
-		return telephoneState;
+	public String getFaxState() {
+		return faxState;
 	}
 
-	public void setTelephoneState(String telephoneState) {
-		this.telephoneState = telephoneState;
+	public void setFaxState(String faxState) {
+		this.faxState = faxState;
 	}
 	
+
 }

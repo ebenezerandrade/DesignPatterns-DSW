@@ -1,4 +1,4 @@
-package org.observer;
+package org.comportamental.observer;
 
 public interface TelephoneListener {
 	

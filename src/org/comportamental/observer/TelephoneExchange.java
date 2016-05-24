@@ -1,19 +1,19 @@
-package org.observer;
+package org.comportamental.observer;
 
 public class TelephoneExchange {
 
 	public static void main(String args[]) {
 		
-		Telephone telephone1 = new Telephone();
-		Person fulano = new Person();
+		Telephone telephone = new Telephone();
+		Person fulano = new Person("Omarzin");
 		
-		fulano.observeTelephone(telephone1);
-		telephone1.isTouched();
+		fulano.observeTelephoneState(telephone);
+		telephone.isTouched();
 		
 		Fax fax = new Fax();
-		Person Omarzinho = new Person();
+		Person outroFulano = new Person("Benézi");
 		
-		Omarzinho.observeFax(fax);
+		outroFulano.observeFaxState(fax);
 		fax.isTouched();
 	}
 }
