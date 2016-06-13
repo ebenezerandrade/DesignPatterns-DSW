@@ -1,7 +1,4 @@
 package com.ebenezer.exercicio2;
-import DanoPuro;
-import Heroi;
-import Magico;
 
 public class DanoMagico extends DanoPuro{
 	
