@@ -1,4 +1,4 @@
-package com.ebenezer.exercicio2;
+package com.ebenezer.exercicio5;
 
 public class Fisico {
 
