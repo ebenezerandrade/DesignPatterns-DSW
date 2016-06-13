@@ -1,4 +1,4 @@
-package br.com.decorator;
+package com.estrutura.decorator;
 
 public class Div extends ContainerDecorator {
 
