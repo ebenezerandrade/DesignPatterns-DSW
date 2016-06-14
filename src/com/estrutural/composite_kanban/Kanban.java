@@ -19,4 +19,10 @@ public class Kanban {
 		System.out.println(requisito.getDescricao() + " removido!");
 		return listaRequisito;
 	}
+	
+	public void imprimirListaRequisitos() {
+		for (int i = 0; i < listaRequisito.size(); i++) {
+			System.out.println(i + " - " + listaRequisito.get(i).getDescricao());
+		}
+	}
 }

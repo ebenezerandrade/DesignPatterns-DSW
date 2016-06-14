@@ -21,14 +21,19 @@ public class Cliente {
 		f1.atualizarHistorico(date);
 		s1.atualizarHistorico(date);
 		
+		k1.imprimirListaRequisitos();
+		
 		k1.addRequisito(ep1);
 		k1.addRequisito(f1);
 		k1.addRequisito(s1);
+		
+		k1.imprimirListaRequisitos();
 		
 		k1.removeRequisito(ep1);
 		k1.removeRequisito(f1);
 		k1.removeRequisito(s1);
 		
+		k1.imprimirListaRequisitos();
 	}
 
 }
