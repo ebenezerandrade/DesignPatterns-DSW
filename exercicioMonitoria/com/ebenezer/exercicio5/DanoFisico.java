@@ -1,7 +1,4 @@
-package com.ebenezer.exercicio2;
-import DanoPuro;
-import Fisico;
-import Heroi;
+package com.ebenezer.exercicio5;
 
 public class DanoFisico extends DanoPuro{
 	

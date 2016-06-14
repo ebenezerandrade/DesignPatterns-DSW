@@ -1,5 +1,4 @@
-package com.ebenezer.exercicio2;
-import Heroi;
+package com.ebenezer.exercicio5;
 
 public class DanoPuro {
 
